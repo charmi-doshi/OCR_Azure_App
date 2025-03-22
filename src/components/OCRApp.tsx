@@ -107,12 +107,12 @@ const OCRApp: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-400 via-purple-400 to-pink-400 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 p-8">
       <div className="max-w-2xl w-full mx-auto bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-8 border border-white/50">
-        <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">Image to Text Converter</h1>
+        <h1 className="text-3xl text-black-700 font-bold text-gray-800 mb-8 text-center">AZURE-based Image to Text Convertor</h1>
 
         <div className="flex gap-4 justify-center mb-8">
-          <label className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-400 text-white rounded-lg hover:from-purple-600 hover:to-pink-500 transition-all shadow-lg cursor-pointer">
+          <label className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-500 text-whitebg-gradient-to-r from-emerald-600 to-teal-500 text-white rounded-lg  hover:from-blue-600 hover:to-cyan-500 transition-all shadow-lg cursor-pointer">
             <input
               type="file"
               accept="image/*"
@@ -133,7 +133,7 @@ const OCRApp: React.FC = () => {
         <button
           onClick={handleSubmit}
           disabled={loading}
-          className="w-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-2 rounded-lg mt-4 hover:from-blue-600 hover:to-cyan-500 transition-all shadow-lg disabled:opacity-50"
+          className="w-full bg-gradient-to-r from-emerald-600 to-teal-500 text-whitebg-gradient-to-r from-emerald-600 to-teal-500 text-white py-2 rounded-lg mt-4 hover:from-blue-600 hover:to-cyan-500 transition-all shadow-lg disabled:opacity-50"
         >
           {loading ? 'Processing...' : 'Extract Text'}
         </button>
