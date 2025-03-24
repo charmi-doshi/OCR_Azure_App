@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# Azurebased OCR Application
+This OCR (Optical Character Recognition) application leverages Azure Vision API to extract text from images with high accuracy. Built with React Vite for the frontend and an API integration layer using Azure cloud technologies, this app provides a seamless user experience for text extraction, processing, and display.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Demo
 
-Currently, two official plugins are available:
+https://github.com/user-attachments/assets/001ac923-f644-43c4-8dc2-69524b851843
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
 
-## Expanding the ESLint configuration
+Upload images for text extraction.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Process images using Azure Vision API for OCR.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Display extracted text in a structured format.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Supports multiple image formats (JPG, PNG, etc.).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Lightweight and high-performance frontend built with React Vite.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Secure API calls handled through Azure cloud services.
+
+# Tech Stack
+
+Frontend: React Vite, TailwindCSS (for styling)
+
+Backend: Azure Functions (for API handling)
+
+OCR Service: Azure Vision API
+
+Authentication: Azure Active Directory (Optional for secured access)
+
+Deployment: Azure App Service
+
+# Installation & Setup
+
+Prerequisites
+
+Node.js (v16+ recommended)
+
+Azure account with Cognitive Services enabled
+
+Azure Vision API Key & Endpoint
+
+
